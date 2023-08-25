@@ -1,0 +1,58 @@
+.carousel-inner {
+    text-align: center;
+}
+.carousel-inner p {
+    display: inline-block;
+    font-size: 18px;
+
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 10px;
+    height: 10px;
+}
+
+h5 {
+    font-family: helvetica;
+    font-weight:700;
+    font-size:3em;
+}
+
+p {
+    font-family:didot;
+    line-height:1.5;
+}
+
+.custom-bg-color1 {
+    background-color: #E5E4E2;
+}
+
+.custom-bg-color2 {
+    background-color: #4682B4;
+}
+
+.responsive-div {
+    width: 100%;
+    height: 70vh;
+}
+
+.learn-play-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.learn-play-text {
+    font-size: 24px;
+    margin: 0 15px;
+    color: #4682B4
+}
+
+.lies {
+    font-size: 30px;
+}
+
+.bottom-buffer {
+    margin-bottom: 40px;
+}
