@@ -1,6 +1,9 @@
+/* General styles */
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -10,6 +13,25 @@ header {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
+    color: white; /* Ensuring headers in header section are white */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Section styles */
+#featured-work {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+#quote-showcase {
+    background-color: #4682B4;
+    color: white;
+    padding: 40px 0;
 }
 
 .creative-visual {
@@ -19,15 +41,6 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#featured-work {
-    background-color: #f8f9fa;
-}
-
-#quote-showcase {
-    background-color: #4682B4;
-    color: white;
 }
 
 .quote-text {
@@ -54,6 +67,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 25px;
     padding: 10px 25px;
     font-weight: 600;
+    background-color: #00CED1; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Removing default border */
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
 .scratchGame {
@@ -69,4 +86,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .learn-play-text:hover {
     color: #00CED1;
+}
+
+.text-center {
+    text-align: center; /* Added to center align text */
 }
