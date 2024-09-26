@@ -1,134 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Divyanshu Singh - Creative Portfolio</title>
-</head>
+    <title>My Webpage</title>
+  </head>
 
-<body>
-    <!-- Navbar -->
+  <body>
+    <!--Navbar Starts Here-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Divyanshu Singh</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="experience.html">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Divyanshu Singh</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
+    <!--Navbar Ends Here-->
 
-    <!-- Hero Section -->
-    <header id="home" class="text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Divyanshu Singh</h1>
-            <p class="lead">Exploring the frontiers of AI and Computer Science</p>
+    <!--Carousel 1 Starts Here-->
+    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <p>Hello World! I'm Divyanshu Singh, a passionate programmer and tech enthusiast.</p>
         </div>
-    </header>
-
-    <!-- Creative Intro Section -->
-    <section id="intro" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h2 class="mb-4">Hello, World!</h2>
-                    <p>I'm a curious mind navigating the vast universe of computer science. From crafting intelligent algorithms to unraveling the mysteries of machine learning, I'm on a journey to push the boundaries of what's possible in tech.</p>
-                </div>
-                <div class="col-lg-6">
-                    <div class="creative-visual">
-                        <!-- Add a creative visual element here, like an animated SVG or a unique image -->
-                    </div>
-                </div>
-            </div>
+        <div class="carousel-item">
+          <p>Hesitation is defeat.</p>
         </div>
-    </section>
-
-    <!-- Featured Work Teaser -->
-    <section id="featured-work" class="bg-light py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">Featured Work</h2>
-            <p>Dive into a world where AI meets innovation. From optimizing food delivery routes to breaking language barriers, my projects are at the intersection of cutting-edge technology and real-world solutions.</p>
-            <a href="projects.html" class="btn btn-primary mt-3">Explore Projects</a>
+        <div class="carousel-item">
+          <p>Did you know? I once developed a ChatBot that was trained on reddit data(Needless to say it was pretty rude!).</p>
         </div>
-    </section>
-
-    <!-- Quote Carousel -->
-    <div id="quoteCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <p>"Hello World! I'm Divyanshu Singh, a passionate programmer and tech enthusiast."</p>
-            </div>
-            <div class="carousel-item">
-                <p>"Hesitation is defeat."</p>
-            </div>
-            <div class="carousel-item">
-                <p>"Did you know? I once developed a ChatBot that was trained on reddit data (Needless to say it was pretty rude!)."</p>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#quoteCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#quoteCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+    <!--Carousel 1 Ends Here-->
 
-    <!-- Doom Scratcheternal Section -->
+    <!--Animation Scroll and Main Body Starts Here-->
+    <div class="container-fluid text-center p-3 mb-2 custom-bg-color1 text-black responsive-div" data-aos="fade-up">
+      <h5 class="welcomeMessage" data-aos="fade-up">
+        Welcome
+      </h5>
+      <p class="Info" data-aos="fade-up">The idea behind this website is to introduce the world to my work and
+        innovations(if any).</p>
+      <p class="futurePlans" data-aos="fade-up">In the near future, I hope to upload some of my programs to this site, so please check back.</p>
+      <p class="enjoyText" data-aos="fade-up" style="font-size: 2rem; margin-top: 20px;">For now, enjoy exploring!</p>
+    </div>
     <div class="container-fluid h-auto text-center p-3 mb-2 bg-dark text-white responsive-div" data-aos="fade-up">
-        <h5 class="scratchGame" data-aos="fade-up">
-            Doom Scratcheternal
-        </h5>
-        <h6 class="lies">Impressively fun. Impossibly hard.</h6>
-        <div class="learn-play-container" data-aos="fade-up">
-            <a href="contact.html"><h6 class="learn-play-text">Learn More ></h6></a>
-            <a href="doom.html"><h6 class="learn-play-text">Play ></h6></a>
-        </div>
-        <img src="first.jpg" class="img-fluid bottom-buffer" data-aos="fade-up">
-        <img src="second.jpg" class="img-fluid bottom-buffer" data-aos="fade-up">
-        <img src="third.jpg" class="img-fluid bottom-buffer" data-aos="fade-up">
+      <h5 class="scratchGame" data-aos="fade-up">
+        Doom Scratcheternal
+      </h5>
+      <h6 class="lies">Impressively fun. Impossibly hard.</h6>
+      <div class="learn-play-container" data-aos="fade-up">
+        <a href="contact.html"><h6 class="learn-play-text">Learn More ></h6></a>
+        <a href="doom.html"><h6 class="learn-play-text">Play ></h6></a>
+      </div>
+      <img src="first.jpg" class="img-fluid bottom-buffer" data-aos="fade-up">
+      <img src="second.jpg" class="img-fluid bottom-buffer" data-aos="fade-up">
+      <img src="third.jpg" class="img-fluid bottom-buffer" data-aos="fade-up">
     </div>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">Let's Connect</h2>
-            <p>Ready to collaborate on the next big thing in tech? Drop me a line!</p>
-            <a href="mailto:f20221129@goa.bits-pilani.ac.in" class="btn btn-primary me-2">Email Me</a>
-            <a href="https://www.linkedin.com/in/divyanshu-singh-130951250" class="btn btn-secondary">LinkedIn</a>
-        </div>
-    </section>
+    <!--Animation Scroll and Main Body Ends Here-->
 
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 
 </html>
