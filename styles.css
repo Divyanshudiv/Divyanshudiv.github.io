@@ -1,96 +1,63 @@
-/* General Carousel Styling */
-.carousel-inner {
-    text-align: center;
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
 }
 
-.carousel-inner p {
-    display: inline-block;
-    font-size: 18px;
+header {
+    background: linear-gradient(45deg, #4682B4, #00CED1);
+    padding: 100px 0;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 10px;
-    height: 10px;
-}
-
-/* Typography */
-h5 {
-    font-family: helvetica;
+h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    font-size: 3em;
 }
 
-p {
-    font-family: didot;
-    line-height: 1.5;
-}
-
-/* Custom Background Colors */
-.custom-bg-color1 {
-    background-color: #E5E4E2; /* Light grey */
-}
-
-.custom-bg-color2 {
-    background-color: #4682B4; /* Steel blue */
-}
-
-/* Responsive Div */
-.responsive-div {
-    width: 100%;
-    height: 70vh;
-}
-
-/* Learn and Play Container */
-.learn-play-container {
+.creative-visual {
+    height: 300px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    justify-content: center;
+}
+
+#featured-work {
+    background-color: #f8f9fa;
+}
+
+.carousel-item {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4682B4;
+    color: white;
+}
+
+.carousel-item p {
+    font-size: 24px;
+    font-style: italic;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.btn {
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+.scratchGame {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .learn-play-text {
-    font-size: 24px;
-    margin: 0 15px;
+    font-size: 1.2em;
     color: #4682B4;
+    transition: color 0.3s ease;
 }
 
-/* Custom Font Size */
-.lies {
-    font-size: 30px;
-}
-
-/* Bottom Margin */
-.bottom-buffer {
-    margin-bottom: 40px;
-}
-
-/* Grey Panel for Career Updates */
-.career-updates-panel {
-    background-color: #E5E4E2; /* Adjust this color to match your design */
-    padding: 20px;
-    text-align: center;
-}
-
-.career-updates {
-    margin-top: 20px;
-    font-family: didot;
-}
-
-/* Specific Padding for Career Updates Section */
-.career-updates ul {
-    list-style-type: none; /* Removes bullets from list */
-    padding: 0;
-}
-
-.career-updates li {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-/* Additional Styling for Responsiveness */
-@media (max-width: 768px) {
-    .career-updates li {
-        font-size: 16px;
-    }
+.learn-play-text:hover {
+    color: #00CED1;
 }
