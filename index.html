@@ -8,7 +8,7 @@
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Divyanshu Singh - Portfolio</title>
+    <title>Divyanshu Singh - Creative Portfolio</title>
 </head>
 
 <body>
@@ -26,13 +26,10 @@
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="experience.html">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -43,89 +40,84 @@
     </nav>
 
     <!-- Hero Section -->
-    <header id="home" class="bg-primary text-white text-center py-5">
+    <header id="home" class="text-white text-center py-5">
         <div class="container">
             <h1 class="display-4">Divyanshu Singh</h1>
-            <p class="lead">Computer Science Student | Researcher | AI Enthusiast</p>
+            <p class="lead">Exploring the frontiers of AI and Computer Science</p>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
+    <!-- Creative Intro Section -->
+    <section id="intro" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">About Me</h2>
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <p>I'm a Computer Science student at Birla Institute of Technology and Science Pilani, Goa, with a passion for AI, Machine Learning, and Natural Language Processing. My research focuses on optimizing delivery routes and ride-sharing systems using advanced AI techniques.</p>
+                    <h2 class="mb-4">Hello, World!</h2>
+                    <p>I'm a curious mind navigating the vast universe of computer science. From crafting intelligent algorithms to unraveling the mysteries of machine learning, I'm on a journey to push the boundaries of what's possible in tech.</p>
                 </div>
                 <div class="col-lg-6">
-                    <h4>Skills</h4>
-                    <ul>
-                        <li>Languages: Python, C++, C, Java</li>
-                        <li>Tools: PyTorch, TensorFlow, HuggingFace, Gymnasium, PettingZoo, Anaconda, GitHub</li>
-                        <li>Areas of Interest: Reinforcement Learning, Deep Learning, Natural Language Processing, Optimization</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Experience</h2>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Undergraduate Researcher</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">APP Center for AI Research, Goa, India | Jan 2024 - Present</h6>
-                    <p class="card-text">Developed DeliverAI, a Reinforcement Learning-based model optimizing food delivery routes. Currently researching a novel ride-sharing optimization problem.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Research Intern</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Digital India Bhashini Division, New Delhi, India | May 2024 - July 2024</h6>
-                    <p class="card-text">Contributed to the National Language Mission, focusing on Inverse Text Normalization and developing a Weighted Finite State Transducer (WFST) model for linguistic tasks.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Projects</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Inverse Text Normalization</h5>
-                            <p class="card-text">Developed a WFST model for handling Inverse Text Normalization across multiple Indic languages. Currently exploring Transformer-based Neural Text Normalization methods.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">TheCourseAssignment</h5>
-                            <p class="card-text">Designed a heuristic graph-optimization algorithm for assigning faculty to courses based on preferences and load constraints.</p>
-                        </div>
+                    <div class="creative-visual">
+                        <!-- Add a creative visual element here, like an animated SVG or a unique image -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Featured Work Teaser -->
+    <section id="featured-work" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Featured Work</h2>
+            <p>Dive into a world where AI meets innovation. From optimizing food delivery routes to breaking language barriers, my projects are at the intersection of cutting-edge technology and real-world solutions.</p>
+            <a href="projects.html" class="btn btn-primary mt-3">Explore Projects</a>
+        </div>
+    </section>
+
+    <!-- Quote Carousel -->
+    <div id="quoteCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <p>"Hello World! I'm Divyanshu Singh, a passionate programmer and tech enthusiast."</p>
+            </div>
+            <div class="carousel-item">
+                <p>"Hesitation is defeat."</p>
+            </div>
+            <div class="carousel-item">
+                <p>"Did you know? I once developed a ChatBot that was trained on reddit data (Needless to say it was pretty rude!)."</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#quoteCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#quoteCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Doom Scratcheternal Section -->
+    <div class="container-fluid h-auto text-center p-3 mb-2 bg-dark text-white responsive-div" data-aos="fade-up">
+        <h5 class="scratchGame" data-aos="fade-up">
+            Doom Scratcheternal
+        </h5>
+        <h6 class="lies">Impressively fun. Impossibly hard.</h6>
+        <div class="learn-play-container" data-aos="fade-up">
+            <a href="contact.html"><h6 class="learn-play-text">Learn More ></h6></a>
+            <a href="doom.html"><h6 class="learn-play-text">Play ></h6></a>
+        </div>
+        <img src="first.jpg" class="img-fluid bottom-buffer" data-aos="fade-up">
+        <img src="second.jpg" class="img-fluid bottom-buffer" data-aos="fade-up">
+        <img src="third.jpg" class="img-fluid bottom-buffer" data-aos="fade-up">
+    </div>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-light py-5">
+    <section id="contact" class="py-5">
         <div class="container text-center">
-            <h2 class="mb-4">Get In Touch</h2>
-            <p>Email: f20221129@goa.bits-pilani.ac.in</p>
-            <p>Phone: +91 9354940653</p>
-            <div class="mt-4">
-                <a href="https://divyanshudiv.github.io" class="btn btn-primary me-2">Portfolio</a>
-                <a href="https://www.linkedin.com/in/divyanshu-singh-130951250" class="btn btn-secondary">LinkedIn</a>
-            </div>
+            <h2 class="mb-4">Let's Connect</h2>
+            <p>Ready to collaborate on the next big thing in tech? Drop me a line!</p>
+            <a href="mailto:f20221129@goa.bits-pilani.ac.in" class="btn btn-primary me-2">Email Me</a>
+            <a href="https://www.linkedin.com/in/divyanshu-singh-130951250" class="btn btn-secondary">LinkedIn</a>
         </div>
     </section>
 
