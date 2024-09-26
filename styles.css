@@ -1,41 +1,47 @@
+/* General Carousel Styling */
 .carousel-inner {
     text-align: center;
 }
+
 .carousel-inner p {
     display: inline-block;
     font-size: 18px;
-
 }
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     width: 10px;
     height: 10px;
 }
 
+/* Typography */
 h5 {
     font-family: helvetica;
-    font-weight:700;
-    font-size:3em;
+    font-weight: 700;
+    font-size: 3em;
 }
 
 p {
-    font-family:didot;
-    line-height:1.5;
+    font-family: didot;
+    line-height: 1.5;
 }
 
+/* Custom Background Colors */
 .custom-bg-color1 {
-    background-color: #E5E4E2;
+    background-color: #E5E4E2; /* Light grey */
 }
 
 .custom-bg-color2 {
-    background-color: #4682B4;
+    background-color: #4682B4; /* Steel blue */
 }
 
+/* Responsive Div */
 .responsive-div {
     width: 100%;
     height: 70vh;
 }
 
+/* Learn and Play Container */
 .learn-play-container {
     display: flex;
     justify-content: center;
@@ -46,13 +52,45 @@ p {
 .learn-play-text {
     font-size: 24px;
     margin: 0 15px;
-    color: #4682B4
+    color: #4682B4;
 }
 
+/* Custom Font Size */
 .lies {
     font-size: 30px;
 }
 
+/* Bottom Margin */
 .bottom-buffer {
     margin-bottom: 40px;
+}
+
+/* Grey Panel for Career Updates */
+.career-updates-panel {
+    background-color: #f0f0f0; /* Adjust this color to match your design */
+    padding: 20px;
+    text-align: center;
+}
+
+.career-updates {
+    margin-top: 20px;
+    font-family: didot;
+}
+
+/* Specific Padding for Career Updates Section */
+.career-updates ul {
+    list-style-type: none; /* Removes bullets from list */
+    padding: 0;
+}
+
+.career-updates li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Additional Styling for Responsiveness */
+@media (max-width: 768px) {
+    .career-updates li {
+        font-size: 16px;
+    }
 }
