@@ -25,20 +25,29 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #f8f9fa;
 }
 
-.carousel-item {
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#quote-showcase {
     background-color: #4682B4;
     color: white;
 }
 
-.carousel-item p {
+.quote-text {
     font-size: 24px;
     font-style: italic;
-    max-width: 80%;
-    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.quote-text p {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.quote-text p.active {
+    opacity: 1;
 }
 
 .btn {
