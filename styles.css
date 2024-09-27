@@ -13,38 +13,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .creative-visual {
-    height: 400px; /* Increased height for better visualization */
-    background-color: #f0f0f0; /* Light background for contrast */
+    height: 400px;
+    background-color: #f0f0f0;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* For positioning SVG within */
-    overflow: hidden; /* Prevent overflow */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .node {
-    fill: #007bff; /* Node color */
-    transition: fill 0.3s, transform 0.3s; /* Smooth transform and fill */
+    fill: #007bff;
+    transition: fill 0.3s, transform 0.3s;
 }
 
 .link {
-    stroke: #4682B4; /* Link color */
+    stroke: #4682B4;
     stroke-width: 2;
-    transition: stroke-width 0.3s; /* Smooth transition */
+    transition: stroke-width 0.3s;
 }
 
 .node:hover {
-    fill: #0056b3; /* Darker color on hover */
+    fill: #0056b3;
 }
 
 .node:active {
-    transform: scale(1.5); /* Scale up on click */
+    transform: scale(1.5);
 }
 
 .link:hover {
-    stroke-width: 4; /* Thicker on hover */
+    stroke-width: 4;
 }
 
 #featured-work, #publications, #projects {
@@ -54,12 +54,13 @@ h1, h2, h3, h4, h5, h6 {
 #quote-showcase, #career-updates {
     background-color: #4682B4;
     color: white;
+    padding: 3rem 1rem;
 }
 
 .quote-text {
-    font-size: 24px;
+    font-size: 1.25rem;
     font-style: italic;
-    height: 100px;
+    min-height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,6 +71,9 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .quote-text p.active {
@@ -122,4 +126,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .card:hover {
     transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .quote-text {
+        font-size: 1rem;
+        min-height: 200px;
+    }
 }
