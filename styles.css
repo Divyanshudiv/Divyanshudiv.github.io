@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #f8f9fa;
 }
 
-#quote-showcase, #career-updates {
+#quote-showcase {
     background-color: #4682B4;
     color: white;
     padding: 3rem 1rem;
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .quote-text {
     position: relative;
-    min-height: 600px; /* Adjusted for smaller embeds */
+    min-height: 300px; /* Adjusted for content without embeds */
 }
 
 .quote-item {
@@ -83,17 +83,18 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 15px;
 }
 
-.embed-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 300px;
-    margin: 0 auto;
+.quote-item .btn {
+    background-color: white;
+    color: #4682B4;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.embed-container iframe {
-    max-width: 100%;
-    max-height: 400px;
+.quote-item .btn:hover {
+    background-color: #f0f0f0;
+    color: #30597e;
 }
 
 @media (max-width: 768px) {
@@ -102,11 +103,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .quote-text {
-        min-height: 500px; /* Adjusted for mobile */
-    }
-    
-    .embed-container iframe {
-        max-height: 350px;
+        min-height: 250px; /* Adjusted for mobile */
     }
 }
 

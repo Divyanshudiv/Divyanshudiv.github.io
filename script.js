@@ -9,5 +9,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
   setInterval(changeQuote, 10000); // Change quote every 10 seconds
 
-  // ... (rest of the JavaScript for neural network visualization remains the same) ...
+  // ... (rest of the JavaScript remains the same) ...
 });
