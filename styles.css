@@ -21,6 +21,14 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 }
 
+.creative-visual img {
+    max-width: 100%;   /* Ensures image doesn't exceed its container's width */
+    height: auto;      /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image scales nicely */
+    border-radius: 8px; /* Adds a subtle rounded border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for better aesthetics */
+}
+
 #featured-work, #publications, #projects {
     background-color: #f8f9fa;
 }
