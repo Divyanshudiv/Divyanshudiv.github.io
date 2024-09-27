@@ -61,7 +61,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="creative-visual">
-                        <svg id="neural-network" viewBox="0 0 800 400"></svg>
+                        <svg id="neural-network" width="800" height="400"></svg>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
             <div id="quote-container" class="quote-text">
                 <p class="active">
                     Excited to share that our paper, <em>'The Last Mile: A Novel, HotSpot-Based Distributed Path-Sharing Network for Food Deliveries'</em>, has been accepted for publication in the prestigious IEEE Transactions on Intelligent Transportation Systems (Q1, I.F: 9.95).
-                    <a href="https://www.linkedin.com/posts/department-of-csis-bits-pilani-goa-campus_researchexcellence-ieee-transportationsystems-activity-7243141365197422592-uOFF?utm_source=share&utm_medium=member_desktop" target="_blank">Read more on LinkedIn</a>
+                    <a href="https://www.linkedin.com/posts/department-of-csis-bits-pilani-goa-campus_researchexcellence-ieee-transportationsystems-activity-7243141365197422592-uOFF?utm_source=share&utm_medium=member_desktop" target="_blank">Find out more on LinkedIn</a>
                 </p>
                 <p>
                     Completed my Research Internship at <strong>Digital India Bhashini</strong> during summer 2024, where I contributed to the National Language Translation Mission through work on Inverse Text Normalization using WFSTs and Transformer-based models.
@@ -110,8 +110,8 @@
     <script>
         // Create the neural network visual
         const svg = d3.select("#neural-network");
-        const width = +svg.attr("width");
-        const height = +svg.attr("height");
+        const width = svg.attr("width");
+        const height = svg.attr("height");
 
         // Function to create nodes and links
         function createNeuralNetwork(nodesCount, linksCount) {
@@ -137,7 +137,8 @@
                 .attr("x1", d => nodes[d.source].x)
                 .attr("y1", d => nodes[d.source].y)
                 .attr("x2", d => nodes[d.target].x)
-                .attr("y2", d => nodes[d.target].y);
+                .attr("y2", d => nodes[d.target].y)
+                .style("stroke", "#999");
 
             // Create nodes
             const nodeElements = svg.append("g")
@@ -150,37 +151,27 @@
                 .attr("r", 10)
                 .attr("cx", d => d.x)
                 .attr("cy", d => d.y)
+                .style("fill", "#1f77b4")
                 .on("click", function (event, d) {
                     const newNode = { id: nodes.length, x: event.offsetX, y: event.offsetY };
                     nodes.push(newNode);
-                    createNeuralNetwork(nodes.length, links.length);
+                    svg.selectAll("*").remove(); // Clear existing visual
+                    createNeuralNetwork(nodes.length, links.length); // Recreate
                 });
 
-            // Update positions on every click
+            // Update positions
             function updatePositions() {
-                nodeElements.attr("cx", d => d.x)
-                    .attr("cy", d => d.y);
+                nodeElements.attr("cx", d => d.x).attr("cy", d => d.y);
                 linkElements.attr("x1", d => nodes[d.source].x)
                     .attr("y1", d => nodes[d.source].y)
                     .attr("x2", d => nodes[d.target].x)
                     .attr("y2", d => nodes[d.target].y);
             }
-
-            // Simulate some node movement
-            d3.interval(() => {
-                nodes.forEach(d => {
-                    d.x += (Math.random() - 0.5) * 5;
-                    d.y += (Math.random() - 0.5) * 5;
-                });
-                updatePositions();
-            }, 1000);
         }
 
-        // Initial call to create the network
+        // Initial render
         createNeuralNetwork(10, 15);
-
     </script>
-    
 </body>
 
 </html>
