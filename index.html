@@ -61,7 +61,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="creative-visual">
-                        <img src="visual.jpg" alt="Creative visual representing AI, Reinforcement Learning, and Generative AI" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+                        <svg id="neural-network" viewBox="0 0 800 400"></svg>
                     </div>
                 </div>
             </div>
@@ -107,6 +107,68 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        const svg = document.getElementById('neural-network');
+    
+        const nodes = [
+            { cx: 100, cy: 200, id: '1' },
+            { cx: 300, cy: 100, id: '2' },
+            { cx: 300, cy: 300, id: '3' },
+            { cx: 500, cy: 200, id: '4' },
+            { cx: 700, cy: 100, id: '5' },
+            { cx: 700, cy: 300, id: '6' },
+        ];
+    
+        const links = [
+            { source: '1', target: '2' },
+            { source: '1', target: '3' },
+            { source: '2', target: '4' },
+            { source: '3', target: '4' },
+            { source: '4', target: '5' },
+            { source: '4', target: '6' },
+        ];
+    
+        function drawNetwork() {
+            // Draw links
+            links.forEach(link => {
+                const sourceNode = nodes.find(n => n.id === link.source);
+                const targetNode = nodes.find(n => n.id === link.target);
+    
+                const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                line.setAttribute('class', 'link');
+                line.setAttribute('x1', sourceNode.cx);
+                line.setAttribute('y1', sourceNode.cy);
+                line.setAttribute('x2', targetNode.cx);
+                line.setAttribute('y2', targetNode.cy);
+                svg.appendChild(line);
+            });
+    
+            // Draw nodes
+            nodes.forEach(node => {
+                const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                circle.setAttribute('class', 'node');
+                circle.setAttribute('cx', node.cx);
+                circle.setAttribute('cy', node.cy);
+                circle.setAttribute('r', 20); // Initial radius
+    
+                // Click event to create a new layer
+                circle.addEventListener('click', function() {
+                    const newNode = {
+                        cx: Math.random() * svg.clientWidth, // Random position
+                        cy: Math.random() * svg.clientHeight,
+                        id: (nodes.length + 1).toString()
+                    };
+                    nodes.push(newNode);
+                    drawNetwork(); // Redraw network
+                });
+    
+                svg.appendChild(circle);
+            });
+        }
+    
+        drawNetwork(); // Initial draw
+    </script>
+    
 </body>
 
 </html>
