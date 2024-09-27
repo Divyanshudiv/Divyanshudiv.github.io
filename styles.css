@@ -21,11 +21,11 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 }
 
-#featured-work {
+#featured-work, #publications, #projects {
     background-color: #f8f9fa;
 }
 
-#quote-showcase {
+#quote-showcase, #career-updates {
     background-color: #4682B4;
     color: white;
 }
@@ -56,14 +56,44 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
-#doom-section {
-    background-color: #343a40;
+#experience-hero {
+    background: linear-gradient(45deg, #00CED1, #4682B4);
 }
 
-#doom-section img {
-    transition: transform 0.3s ease;
+.timeline {
+    position: relative;
+    padding: 20px 0;
 }
 
-#doom-section img:hover {
-    transform: scale(1.05);
+.timeline-item {
+    padding: 20px 30px;
+    border-left: 2px solid #4682B4;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #4682B4;
+    left: -9px;
+    top: 20px;
+}
+
+.timeline-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
