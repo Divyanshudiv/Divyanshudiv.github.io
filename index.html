@@ -87,19 +87,27 @@
     </section>
 
     <!-- Doom Scratcheternal Section -->
-    <div class="container-fluid h-auto text-center p-3 mb-2 bg-dark text-white responsive-div" data-aos="fade-up">
-        <h5 class="scratchGame" data-aos="fade-up">
-            Doom Scratcheternal
-        </h5>
-        <h6 class="lies">Impressively fun. Impossibly hard.</h6>
-        <div class="learn-play-container" data-aos="fade-up">
-            <a href="contact.html"><h6 class="learn-play-text">Learn More ></h6></a>
-            <a href="doom.html"><h6 class="learn-play-text">Play ></h6></a>
+    <section id="doom-section" class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2 class="mb-4" data-aos="fade-up">Doom Scratcheternal</h2>
+            <p class="lead mb-4" data-aos="fade-up">Impressively fun. Impossibly hard.</p>
+            <div class="mb-4" data-aos="fade-up">
+                <a href="contact.html" class="btn btn-outline-light me-2">Learn More</a>
+                <a href="doom.html" class="btn btn-primary">Play</a>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-3" data-aos="fade-up">
+                    <img src="first.jpg" alt="Doom Screenshot 1" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="100">
+                    <img src="second.jpg" alt="Doom Screenshot 2" class="img-fluid rounded">
+                </div>
+                <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="200">
+                    <img src="third.jpg" alt="Doom Screenshot 3" class="img-fluid rounded">
+                </div>
+            </div>
         </div>
-        <img src="first.jpg" class="img-fluid bottom-buffer" data-aos="fade-up">
-        <img src="second.jpg" class="img-fluid bottom-buffer" data-aos="fade-up">
-        <img src="third.jpg" class="img-fluid bottom-buffer" data-aos="fade-up">
-    </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-5">
@@ -119,6 +127,9 @@
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

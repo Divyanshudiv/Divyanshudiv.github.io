@@ -56,17 +56,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
-.scratchGame {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+#doom-section {
+    background-color: #343a40;
 }
 
-.learn-play-text {
-    font-size: 1.2em;
-    color: #4682B4;
-    transition: color 0.3s ease;
+#doom-section img {
+    transition: transform 0.3s ease;
 }
 
-.learn-play-text:hover {
-    color: #00CED1;
+#doom-section img:hover {
+    transform: scale(1.05);
 }
