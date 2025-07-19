@@ -20,6 +20,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Animations */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 /* Utility classes */
 .min-h-screen { min-height: 100vh; }
 .flex { display: flex; }
@@ -171,6 +177,7 @@ html {
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
+  display: inline-block;
 }
 
 .btn-primary {
