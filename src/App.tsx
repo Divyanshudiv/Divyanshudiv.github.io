@@ -1,7 +1,6 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Canvas } from '@react-three/fiber';
-import { motion, AnimatePresence } from 'framer-motion';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import Research from './pages/Research';
@@ -11,9 +10,9 @@ import ParticleBackground from './components/ParticleBackground';
 
 function App() {
   return (
-    <div className="App min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="App min-h-screen">
       {/* Global 3D Background */}
-      <div className="fixed inset-0 -z-10">
+      <div style={{ position: 'fixed', inset: 0, zIndex: -1 }}>
         <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
           <Suspense fallback={null}>
             <ParticleBackground />
@@ -23,15 +22,13 @@ function App() {
 
       <Router>
         <Navigation />
-        <AnimatePresence mode="wait">
-          <Suspense fallback={<Loading />}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/research" element={<Research />} />
-              <Route path="/experience" element={<Experience />} />
-            </Routes>
-          </Suspense>
-        </AnimatePresence>
+        <Suspense fallback={<Loading />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/research" element={<Research />} />
+            <Route path="/experience" element={<Experience />} />
+          </Routes>
+        </Suspense>
       </Router>
     </div>
   );
