@@ -1,33 +1,33 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 const Loading: React.FC = () => {
   return (
-    <div className="fixed inset-0 bg-slate-900 flex items-center justify-center z-50">
-      <motion.div
-        className="relative"
-        animate={{
-          scale: [1, 1.2, 1],
-          rotate: [0, 180, 360],
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      >
-        <div className="w-16 h-16 border-4 border-primary-500 border-t-transparent rounded-full animate-spin"></div>
-        <div className="absolute inset-0 w-16 h-16 border-4 border-accent-500 border-b-transparent rounded-full animate-spin" 
-             style={{ animationDirection: 'reverse', animationDuration: '3s' }}></div>
-      </motion.div>
+    <div style={{
+      position: 'fixed',
+      inset: 0,
+      background: '#1e293b',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      zIndex: 50
+    }}>
+      <div style={{
+        width: '4rem',
+        height: '4rem',
+        border: '4px solid #3b82f6',
+        borderTop: '4px solid transparent',
+        borderRadius: '50%',
+        animation: 'spin 1s linear infinite'
+      }}></div>
       
-      <motion.div
-        className="ml-6 text-white text-xl font-display"
-        animate={{ opacity: [0.5, 1, 0.5] }}
-        transition={{ duration: 1.5, repeat: Infinity }}
-      >
+      <div style={{
+        marginLeft: '1.5rem',
+        color: 'white',
+        fontSize: '1.25rem',
+        fontFamily: 'Space Grotesk, sans-serif'
+      }}>
         Loading...
-      </motion.div>
+      </div>
     </div>
   );
 };
